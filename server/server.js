@@ -13,7 +13,8 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.resolve(__dirname, "../public")));
 app.use(express.json());
-app.use(cors({origin: "http://localhost:3000"}));
+// app.use(cors({origin: "http://localhost:3000"}));
+app.use(cors())
 
 //rutas
 app.use(require("./routes/index"));
