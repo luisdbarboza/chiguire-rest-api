@@ -260,7 +260,6 @@ route.put(
 
 route.put("/clicksUpdate/:postId", (req, res) => {
   const postId = req.params.postId;
-  const body = req.body;
 
   if (validateID(postId)) {
     Post.findById(postId)

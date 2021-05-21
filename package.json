@@ -20,7 +20,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cross-env NODE_ENV=produccion nodemon server/server.js",
+    "start": "cross-env NODE_ENV=produccion node server/server.js",
     "dev": "cross-env NODE_ENV=desarrollo nodemon server/server.js",
     "test": "nodemon --exec 'mocha -R min'"
   },
